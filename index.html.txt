@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Love Video Generator 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💝 Love Letter Video Maker</h1>
+            <p>Turn your words into romantic animated magic ✨</p>
+        </header>
+
+        <div class="input-section">
+            <textarea id="loveText" placeholder="Write your romantic message here... 'My love, every moment with you feels like a dream...'"></textarea>
+            <div class="emotion-display">
+                <div id="emotionIcon">💖</div>
+                <div id="emotionText">Detected Emotion: Analyzing...</div>
+                <div id="emotionScore">Intensity: 0%</div>
+            </div>
+            <button id="generateBtn">✨ Create Love Video</button>
+        </div>
+
+        <div class="video-section" id="videoSection" style="display: none;">
+            <canvas id="loveCanvas"></canvas>
+            <div class="controls">
+                <button id="downloadBtn">💾 Download Video</button>
+                <button id="regenerateBtn">🔄 New Animation</button>
+            </div>
+        </div>
+
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="emotions.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
